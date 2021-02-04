@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cric 2021</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <style>
+    .main-container{
+      width: 68%;
+    }
+    @media screen and (max-width: 1162px){
+       .main-container {
+          width: 100%;
+    }
+  }
+
+  p{
+   font-size: 12px !important; 
+  }
+  
+  .adjustBadge{
+    border-radius:30px;
+    width: 100px;
+  }
+  
+  .footer{
+    background-color: #3cb650;
+  }
+
+  .collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: whitesmoke;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.fa {
+  padding: 10px;
+    font-size: 16px;
+    height: 38px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    width: 38px;
+}
+/* 
+.fa:hover {
+    opacity: 0.8;
+} */
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+</style>
+  <section class="container header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <!-- <a class="nav-link" href="#">Link</a> -->
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login / SignUp</button>
+      </form>
+    </div>
+  </nav>
+</section>
+<section> 
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>  
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="w-100 d-lg-none d-sm-block d-block" src="https://images.fanfight.com/Artboard%204%20copy1605016262306.jpg" alt="First slide">
+        <img class="w-100 d-sm-none d-lg-block d-none" src="https://images.fanfight.com/Web%2011605019603795.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="w-100 d-lg-none d-sm-block d-block" src="https://images.fanfight.com/mweb-slider%20%281%291611568935999.jpg" alt="Second slide">
+        <img class="w-100 d-sm-none d-lg-block d-none" src="https://images.fanfight.com/web-slider%20%281%291611568960495.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="w-100 d-lg-none d-sm-block d-block" src="https://images.fanfight.com/mweb-slider1611113372692.jpg" alt="Third slide">
+        <img class="w-100 d-sm-none d-lg-block d-none" src="https://images.fanfight.com/web-slider1609858614248.jpg" alt="Third slide">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container main-container">
+    <div class="jumbotron mb-0 text-center">
+      <h3 class="text-muted mb-4">Upcoming Matches</h3>
+      <div class="row ">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"> 
+          <div class="card bg-light border-0 shadow rounded mb-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-6">
+                    <small class="float-left">SBY 100</small>
+                </div>
+                <div class="col-md-6 col-sm-6 col-6">
+                    <small class="float-right">SBY 100</small>
+                </div>
+              </div>
+              <div class="row mt-4 mb-4">
+                <div class="col-md-4 col-sm-4 col-4 ">
+                  <p class="text-lg-right mt-1"><b> HBL &nbsp; logo</b></p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-4 p-0">
+                    <span class="badge badge-danger pl-3 pr-3 pt-2 pb-2 adjustBadge">27m : 13s</span>
+                </div>
+                <div class="col-md-4 col-sm-4 col-4">
+                  <p class="text-lg-left mt-1"><b> HBL &nbsp; logo</b></p>
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"> 
+          <div class="card bg-light border-0 shadow rounded mb-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-6">
+                    <small class="float-left">SBY 100</small>
+                </div>
+                <div class="col-md-6 col-sm-6 col-6">
+                    <small class="float-right">SBY 100</small>
+                </div>
+              </div>
+              <div class="row mt-4 mb-4">
+                <div class="col-md-4 col-sm-4 col-4 ">
+                  <p class="text-lg-right mt-1"><b> HBL &nbsp; logo</b></p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-4 p-0">
+                    <span class="badge badge-danger pl-3 pr-3 pt-2 pb-2 adjustBadge">27m : 13s</span>
+                </div>
+                <div class="col-md-4 col-sm-4 col-4">
+                  <p class="text-lg-left mt-1"><b> HBL &nbsp; logo</b></p>
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"> 
+          <div class="card bg-light border-0 shadow rounded mb-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-6">
+                    <small class="float-left">SBY 100</small>
+                </div>
+                <div class="col-md-6 col-sm-6 col-6">
+                    <small class="float-right">SBY 100</small>
+                </div>
+              </div>
+              <div class="row mt-4 mb-4">
+                <div class="col-md-4 col-sm-4 col-4 ">
+                  <p class="text-lg-right mt-1"><b> HBL &nbsp; logo</b></p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-4 p-0">
+                    <span class="badge badge-danger pl-3 pr-3 pt-2 pb-2 adjustBadge">27m : 13s</span>
+                </div>
+                <div class="col-md-4 col-sm-4 col-4">
+                  <p class="text-lg-left mt-1"><b> HBL &nbsp; logo</b></p>
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"> 
+          <div class="card bg-light border-0 shadow rounded mb-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-6">
+                    <small class="float-left">SBY 100</small>
+                </div>
+                <div class="col-md-6 col-sm-6 col-6">
+                    <small class="float-right">SBY 100</small>
+                </div>
+              </div>
+              <div class="row mt-4 mb-4">
+                <div class="col-md-4 col-sm-4 col-4 ">
+                  <p class="text-lg-right mt-1"><b> HBL &nbsp; logo</b></p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-4 p-0">
+                    <span class="badge badge-danger pl-3 pr-3 pt-2 pb-2 adjustBadge">27m : 13s</span>
+                </div>
+                <div class="col-md-4 col-sm-4 col-4">
+                  <p class="text-lg-left mt-1"><b> HBL &nbsp; logo</b></p>
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+      </div>
+      <a href="">View All Matches</a>
+      <h3 class="text-muted mb-3 mt-4">Our Features</h3>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-2">
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-3">
+              <img width="70px" src="https://storage.cricingif.com/fpl-prod-images/static-assets/exciting-prizes-icon.svg"  alt="">
+            </div>
+            <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-9">
+              <h5 class="text-left">Daily Matches Contexts</h5>
+              <p class="text-left">
+                Increase your chance of winning by inviting your friends
+                to join and getting 10% extra points on leaderboard for
+                every match fantasy.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-4">
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-3">
+              <img width="70px" src="https://storage.cricingif.com/fpl-prod-images/static-assets/daily-matches-icon.svg"  alt="">
+            </div>
+            <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-9">
+              <h5 class="text-left">Daily Matches Contexts</h5>
+              <p class="text-left">
+                Increase your chance of winning by inviting your friends
+                to join and getting 10% extra points on leaderboard for
+                every match fantasy.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-4">
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-3">
+              <img width="70px" src="https://storage.cricingif.com/fpl-prod-images/static-assets/daily-matches-icon.svg"  alt="">
+            </div>
+            <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-9">
+              <h5 class="text-left">Daily Matches Contexts</h5>
+              <p class="text-left">
+                Increase your chance of winning by inviting your friends
+                to join and getting 10% extra points on leaderboard for
+                every match fantasy.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-4">
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-3">
+              <img width="70px" src="https://storage.cricingif.com/fpl-prod-images/static-assets/exciting-prizes-icon.svg"  alt="">
+            </div>
+            <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-9">
+              <h5 class="text-left">Daily Matches Contexts</h5>
+              <p class="text-left">
+                Increase your chance of winning by inviting your friends
+                to join and getting 10% extra points on leaderboard for
+                every match fantasy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="text-muted mb-3 mt-4">How To Play</h3>
+      <p>Follow the following steps to create your Our Team, using your free credit quota</p>
+        <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 mt-2 align-self-center d-lg-none d-sm-block d-block">
+                <h4 class=""><span class="text-success">Select</span> Matches</h4>
+                <p class="">Select any number of schedule matches from the list 
+                  <br>  you wish to play.</p>
+              </div>  
+              <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 mt-2">
+                    <img class="w-75" src="https://storage.cricingif.com/fpl-prod-images/static-assets/select_matches.svg?v1" alt="">
+              </div>
+               <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 mt-2 align-self-center d-sm-none d-lg-block d-none">
+                      <h4 class="text-left"><span class="text-success">Select</span> Matches</h4>
+                      <p class="text-left">Select any number of schedule matches from the list 
+                        <br>  you wish to play.</p>
+              </div>
+        </div>  
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 mt-2 align-self-center">
+                  <h4 class="text-lg-left ml-lg-5"><span class="text-success">Select</span> Players</h4>
+                  <p class="text-lg-left ml-lg-5">Select your favorite players from both sides.
+                    <br>Max 6 players from one team.</p>
+                    <div class="row">
+                      <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right">
+                        <img width="40px" src="https://storage.cricingif.com/fpl-prod-images/static-assets/exciting-prizes-icon.svg" alt="">
+                        <h5><b>02</b></h5>
+                        <p class="text-nowrap">Wicket Keeper</p>
+                      </div>
+                      <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right">
+                        <img width="40px" src="https://storage.cricingif.com/fpl-prod-images/static-assets/exciting-prizes-icon.svg" alt="">
+                      
+                        <h5><b>02</b></h5>
+                        <p class="text-nowrap">Wicket Keeper</p>
+                      </div>
+                      <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right">
+                        <img width="40px" src="https://storage.cricingif.com/fpl-prod-images/static-assets/exciting-prizes-icon.svg" alt="">
+                        <h5><b>02</b></h5>
+                        <p class="text-nowrap">Wicket Keeper</p>
+                      </div>
+                      <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right">
+                        <img width="40px" src="https://storage.cricingif.com/fpl-prod-images/static-assets/exciting-prizes-icon.svg" alt="">
+                        <h5><b>02</b></h5>
+                        <p class="text-nowrap">Wicket Keeper</p>
+                      </div>  
+                    </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 mt-2">
+            <img class="w-75" src="https://storage.cricingif.com/fpl-prod-images/static-assets/select_players.png" alt="">
+           </div>    
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 mt-2 align-self-center d-lg-none d-sm-block d-block">
+            <h4 class="text-center"><span class="text-success">Select</span> Captain & Vice Captain</h4>
+              <p class="text-center">Select any number of schedule matches from the list 
+              <br>  you wish to play.</p>
+            </div>  
+          <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 mt-2">
+              <img class="w-75" src="https://storage.cricingif.com/fpl-prod-images/static-assets/select_captain.svg" alt="">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 mt-2 align-self-center d-sm-none d-lg-block d-none">
+                    <h4 class="text-left"><span class="text-success">Select</span> Captain & Vice Captain</h4>
+                    <p class="text-left">Select any number of schedule matches from the list 
+                      <br>  you wish to play.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 mt-2 align-self-center">
+              <h4 class="text-sm-center text-lg-left ml-lg-5"><span class="text-success">FOLLOW </span>LEADERBOARD</h4>
+              <p class="text-sm-center text-lg-left ml-lg-5">Select your favorite players from both sides.
+                <br>Max 6 players from one team.</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 mt-2">
+            <img class="w-75" src="https://storage.cricingif.com/fpl-prod-images/static-assets/follow_leaderboard.svg" alt="">
+            </div>
+        </div>
+        <h3 class="text-muted mt-5 mb-3">Points Table</h3>
+        <p>Your each selected player would be earning points based on 
+          the following criteria, dependent on his actual performances
+             in every game.
+        </p>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-4">
+              <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                    <img src="https://storage.cricingif.com/fpl-prod-images/static-assets/batsman-icon.svg" alt="">
+                  </div>
+                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 ">
+                  <h5 class="mt-lg-5 mt-md-5 mt-sm-5 text-lg-left text-md-left">Batting Points</h5>
+                </div>
+              </div>
+              <h5 class="mt-4 text-left ml-3">Strike Rate</h5>
+              <div class="table-responsive">
+                <table class="table table-borderless">
+                  <tbody>
+                    <tr class="text-left">
+                      <td>0.1 to 75.0</td>
+                      <td> <b>-15 Pts</b> </td>
+                    </tr>
+                    <tr class="text-left">
+                      <td>75.1 to 100.0</td>
+                      <td><b>-10 Pts</b></td>
+                    </tr>
+                    <tr class="text-left">
+                      <td>100.1 to 125.0 </td>
+                      <td><b>5 Pts</b></td>
+                    </tr>
+                    <tr class="text-left">
+                      <td>125.1 to 150.0</td>
+                      <td><b>14 ptr</b></td>
+                    </tr>
+                    <tr class="text-left">
+                      <td>75.1 to 100.0</td>
+                      <td><b>-10 Pts</b></td>
+                    </tr>
+                    <tr class="text-left">
+                      <td>100.1 to 125.0 </td>
+                      <td><b>54 Pts</b></td>
+                    </tr>
+                  </tbody>
+                </table>                 
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-4">
+              <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                    <img src="https://storage.cricingif.com/fpl-prod-images/static-assets/bowler-icon.svg" alt="">
+                  </div>
+                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 ">
+                  <h5 class="mt-lg-5 mt-md-5 mt-sm-5 text-lg-left text-md-left">Bowling Points</h5>
+                </div>
+              </div>
+              <h5 class="mt-4 text-left ml-3">Strike Rate</h5>
+              <div class="table-responsive">
+                <table class="table table-borderless">
+                  <tbody>
+                    <tr class="text-left">
+                      <td>0.1 to 75.0</td>
+                      <td> <b>-15 Pts</b> </td>
+                    </tr>
+                    <tr class="text-left">
+                      <td>75.1 to 100.0</td>
+                      <td><b>-10 Pts</b></td>
+                    </tr>
+                    <tr class="text-left">
+                      <td>100.1 to 125.0 </td>
+                      <td><b>5 Pts</b></td>
+                    </tr>
+                    <tr class="text-left">
+                      <td>125.1 to 150.0</td>
+                      <td><b>14 ptr</b></td>
+                    </tr>
+                    <tr class="text-left">
+                      <td>75.1 to 100.0</td>
+                      <td><b>-10 Pts</b></td>
+                    </tr>
+                    <tr class="text-left">
+                      <td>100.1 to 125.0 </td>
+                      <td><b>54 Pts</b></td>
+                    </tr>
+                  </tbody>
+                </table>                 
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="container">
+              <div class="row">
+                <div class="offset-md-2 col-md-8 offset-md-2">
+                  <h3 class="text-muted mb-3 mt-4">Fantasy Cricket FAQ</h3>     
+                  <button class="collapsible  mt-2">What is Fantasy Cricket ?</button>
+                    <div class="content">
+                      <h6 class="p-3 text-left">Lorem ipsum dolor sit amet, consectetur adipisicing
+                         elit, sed do eiusmod tempor incididunt ut labore et \
+                         d1olore magna aliqua. Ut enim ad minim v
+                         eniam, quis nostrud exercitation ullamco laboris nisi ut a
+                         liquip ex ea commodo consequat.
+                      </h6>
+                    </div>
+                    <button class="collapsible mt-3">Can I Actually Win Money In Site ?</button>
+                    <div class="content">
+                      <h6 class="p-3 text-left">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et \
+                        d1olore magna aliqua. Ut enim ad minim v
+                        eniam, quis nostrud exercitation ullamco laboris nisi ut a
+                        liquip ex ea commodo consequat.
+                     </h6>
+                    </div>
+                    <button class="collapsible mt-3">Is It Save To Add Money To This Site ?</button>
+                    <div class="content">
+                      <h6 class="p-3 text-left">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et \
+                        d1olore magna aliqua. Ut enim ad minim v
+                        eniam, quis nostrud exercitation ullamco laboris nisi ut a
+                        liquip ex ea commodo consequat.
+                     </h6>
+                    </div>
+                 </div>
+                </div>
+          </div>
+        </div>
+</section>
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="text-center col-md-4">
+        <img src="https://storage.cricingif.com/fpl-prod-images/static-assets/exciting-prizes-icon.svg" alt="">
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-center mt-lg-4 mt-2 pt-2 text-white">@ All Right Reserved</h6>
+      </div>
+      <div class="col-md-4 text-center pt-2 mt-2 mb-sm-4">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+</body>
+</html>
